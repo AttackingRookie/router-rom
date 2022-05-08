@@ -156,11 +156,11 @@ jobs:
       if: ${{ github.event.inputs.release == 'yes' }}
       uses: softprops/action-gh-release@v1
       with:
-        name: ${{ env.NAME }}
-        tag_name: ${{ env.TAG }}
-        body_path: /opt/images/readme.txt
-        draft: false
-        prerelease: false
+        #name: ${{ env.NAME }}
+        #tag_name: ${{ env.TAG }}
+        #body_path: /opt/images/readme.txt
+        #draft: false
+        #prerelease: false
         files: /opt/images/*
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
